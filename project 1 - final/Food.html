@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Food</title>
+    <link rel="stylesheet" href="Food.css">
+</head>
+
+<body>
+    
+    <!-- navbar with moving background-->
+<div class="heading" style="background-image: url('2454346_b817a.gif');">
+    <div>
+        <h1>Food</h1>
+    </div>
+    <div>
+        <!-- links to different sections of the webpage-->
+        <nav class="active" id="nav">
+            <ul>
+                <li><a href="#sandwiches">Sandwiches</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+                <li><a href="#wings">Wings</a></li>
+                <li><a href="#sides">Sides</a></li>
+            </ul>
+            <!-- x button -->
+            <button class="icon" id="toggle">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </button>
+        </nav>
+    </div>
+    <!--Search-->
+    <div>
+        <div class="search">
+            <input type="text" class="input" placeholder="Search" />
+            <button class="btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+    <header>
+        <img src="fastFeastLogo.png" alt="FastFeast logo" class="logo">
+        <nav class="NavigationBar" id="NavigationBar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="beverages.html">Beverage</a></li>
+                <li><a href="cartpage.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-- Sandwiches Section -->
+<h2 id="sandwiches">Sandwiches</h2>
+<div class="container">
+    <div class="subcontainer">
+        <img src="Cheeseburger.jpg" alt="Cheeseburger">
+        <div class="info">
+            <h3>Cheeseburger</h3>
+            <span>$5.99</span>
+        </div>
+        <div class="overview">
+            Calories: 313 <br>
+            Total Fat: 14% <br>
+            Sodium: 30% <br>
+            Carbohydrate: 33% <br>
+            Protein: 15%
+        </div>
+        <button type="button" onclick="addToCart('cheeseburger001')">Add to cart</button>
+    </div>
+    <div class="subcontainer">
+        <img src="chicken sandwich.jpg" alt="chicken sandwich">
+        <div class="info">
+            <h3>Chicken Sandwich</h3>
+            <span>$4.99</span>
+        </div>
+        <div class="overview">
+            Calories: 71 <br>
+            Total Fat: 7% <br>
+            Sodium: 2% <br>
+            Carbohydrate: 26% <br>
+            Protein: 20%
+        </div>
+        <button type="button" onclick="addToCart('chickensandwich002')">Add to cart</button>
+    </div>
+</div>
+
+<!-- Pizza Section -->
+<h2 id="pizza">Pizza</h2>
+<div class="container">
+    <div class="subcontainer">
+        <img src="regular pizza.jpg" alt="regular pizza">
+        <div class="info">
+            <h3>Regular Pizza</h3>
+            <span>$11.50</span>
+        </div>
+        <div class="overview">
+            Calories: 285 <br>
+            Total Fat: 10% <br>
+            Sodium: 640mg <br>
+            Carbohydrate: 35% <br>
+            Protein: 8%
+        </div>
+        <button type="button" onclick="addToCart('regularpizza003')">Add to cart</button>
+    </div>
+    <div class="subcontainer">
+        <img src="veggie pizza.jpg" alt="Veggie Pizza">
+        <div class="info">
+            <h3>Veggie Pizza</h3>
+            <span>$9.50</span>
+        </div>
+        <div class="overview">
+            Calories: 350 <br>
+            Total Fat: 12g <br>
+            Sodium: 700mg <br>
+            Carbohydrate: 35% <br>
+            Protein: 12%
+        </div>
+        <button type="button" onclick="addToCart('veggiepizza004')">Add to cart</button>
+    </div>
+</div>
+
+<!-- Wings Section -->
+<h2 id="wings">Wings</h2>
+<div class="container">
+    <div class="subcontainer">
+        <img src="buffalo wings.jpg" alt="Buffalo Wings">
+        <div class="info">
+            <h3>Buffalo Wings</h3>
+            <span>$8.99</span>
+        </div>
+        <div class="overview">
+            Calories: 88 <br>
+            Total Fat: 6.3% <br>
+            Sodium: 4% <br>
+            Carbohydrate: 102% <br>
+            Protein: 2.6%
+        </div>
+        <button type="button" onclick="addToCart('buffalowings005')">Add to cart</button>
+    </div>
+    <div class="subcontainer">
+        <img src="Mango Habanero.jpg" alt="Mango Habanero">
+        <div class="info">
+            <h3>Mango Habanero</h3>
+            <span>$8.99</span>
+        </div>
+        <div class="overview">
+            Calories: 90 <br>
+            Total Fat: 7.2% <br>
+            Sodium: 6% <br>
+            Carbohydrate: 105% <br>
+            Protein: 2.8%
+        </div>
+        <button type="button" onclick="addToCart('mangohabanero006')">Add to cart</button>
+    </div>
+    <div class="subcontainer">
+        <img src="Garlic Parmesan.jpg" alt="Garlic Parmesan">
+        <div class="info">
+            <h3>Garlic Parmesan</h3>
+            <span>$8.99</span>
+        </div>
+        <div class="overview">
+            Calories: 0 <br>
+            Total Fat: 0% <br>
+            Sodium: 8% <br>
+            Carbohydrate: 129% <br>
+            Protein: 2.8%
+        </div>
+        <button type="button" onclick="addToCart('garlicparmesan007')">Add to cart</button>
+    </div>
+</div>
+
+<!-- Sides Section -->
+<h2 id="sides">Sides</h2>
+<div class="container">
+    <div class="subcontainer">
+        <img src="fries.jpg" alt="fries">
+        <div class="info">
+            <h3>Fries</h3>
+            <span>$1.99</span>
+        </div>
+        <div class="overview">
+            Calories: 365 <br>
+            Total Fat: 17g <br>
+            Sodium: 246mg <br>
+            Carbohydrate: 48g <br>
+            Protein: 0%
+        </div>
+        <button type="button" onclick="addToCart('fries008')">Add to cart</button>
+    </div>
+    <div class="subcontainer">
+        <img src="onion rings.jpg" alt="Onion Rings">
+        <div class="info">
+            <h3>Onion Rings</h3>
+            <span>$2.99</span>
+        </div>
+        <div class="overview">
+            Calories: 480 <br>
+            Total Fat: 30g <br>
+            Sodium: 900mg <br>
+            Carbohydrate: 0% <br>
+            Protein: 3.5%
+        </div>
+        <button type="button" onclick="addToCart('onionrings009')">Add to cart</button>
+    </div>
+    <div class="subcontainer">
+        <img src="chicken nuggets.jpg" alt="Chicken Nuggets">
+        <div class="info">
+            <h3>Chicken Nuggets</h3>
+            <span>$4.99</span>
+        </div>
+        <div class="overview">
+            Calories: 59 <br>
+            Total Fat: 9% <br>
+            Sodium: 111mg <br>
+            Carbohydrate: 3% <br>
+            Protein: 3.1%
+        </div>
+        <button type="button" onclick="addToCart('chickennuggets010')">Add to cart</button>
+    </div>
+</div>
+
+<hr>
+
+
+<footer class="footer-content">
+    <p>© 2024 FastFeast - All rights reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
+    <p>Contact US - 555-342-9087</p>
+</footer>
+
+<script src="Food.js"></script>
+</body>
+</html>

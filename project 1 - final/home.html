@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar Layout</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+
+
+    <div class="head_of_page">
+        <img class="logo" src="fastFeastLogo.png" alt="logo">
+        <nav>
+            <ul class="nav__links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Food.html">Food</a></li>
+                <li><a href="Beverages.html">Beverages</a></li>
+                <li><a href="#" id="aboutLink">About us</a></li>
+                <li><a href="cartpage.html">cart</a></li>
+
+                </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="popup" style="display:none;">
+        <button id="closePopupButton">X</button>
+        <h2>About Us</h2>
+        <p>Welcome to FastFeast, your premier destination for fast food. Our website is crafted to ensure a seamless ordering experience.</p>
+        <p>The website was developed by:</p>
+       
+        <ul>
+            <li>Ahmed Ali</li>
+            <li>Bryan Mejia</li>
+            <li>Jahed Ullah</li>
+            <li>Merlyn Pothen</li>
+            <li>Nafiz Kalimullah</li>
+        </ul>
+        
+    </div>
+<!-- Main Content -->
+
+  <div class="container">
+    <main class="content">
+      <header class="header">
+        <h2>Fast Feast!</h2>
+      </header>
+      <section class="main-content">
+        <p>
+            <strong>FastFeast</strong> is a vibrant and contemporary fast food restaurant that prides itself on delivering delicious,
+             high-quality meals in a hurry. With a diverse menu featuring classic favorites like juicy burgers, 
+             crispy fries, and mouthwatering chicken sandwiches. <br>
+             <br>
+             <p>FastFeast caters to all tastes. Health-conscious customers will appreciate the range of fresh 
+                salads and wraps, while those with a sweet tooth can indulge in decadent milkshakes 
+                and desserts. 
+             </p>
+             <br>
+            <p>The restaurant's bright, inviting atmosphere makes it a perfect spot for families, friends, or anyone
+             on the go. FastFeast emphasizes speed without sacrificing quality, ensuring that every meal is prepared 
+             quickly and served hot. Whether dining in, taking out, or enjoying delivery, FastFeast is committed to providing
+              a satisfying and enjoyable dining experience for everyone.
+        </p>
+        </p>
+      </section>
+    </main>
+  </div>
+
+<!-- Second Container Block (New Section) -->
+<div class="container second-container">
+    <main class="content">
+        <header class="header">
+            <h2>FEATURED ITEMS</h2>
+        </header>
+        <section class="main-content">
+            <div class="additional-content">
+                <div class="subcontainer">
+                    <button type="button" onclick="addToCart('fries001')">Add to cart</button>
+                    <img src="fries.jpg" alt="fries">
+                    <div class="info">
+                        <h3>Fries</h3>
+                        <span>$1.99</span>
+                    </div>
+                    <div class="overview">
+                        Calories: 365 <br>
+                        Total Fat: 17g <br>
+                        Sodium: 246mg <br>
+                        Carbohydrate: 48g <br>
+                        Protein: 4g
+                    </div>
+                </div>
+                <div class="subcontainer">
+                    <button type="button" onclick="addToCart('pizza002')">Add to cart</button>
+                    <img src="regular_pizza.jpg" alt="pizza">
+                    <div class="info">
+                        <h3>Regular Pizza</h3>
+                        <span>$2.99</span>
+                    </div>
+                    <div class="overview">
+                        Calories: 285 <br>
+                        Total Fat: 10g <br>
+                        Sodium: 640mg <br>
+                        Carbohydrate: 36g <br>
+                        Protein: 12g
+                    </div>
+                </div>
+                <div class="subcontainer">
+                    <button type="button" onclick="addToCart('nuggets003')">Add to cart</button>
+                    <img src="chicken_nuggets.jpg" alt="chicken_nuggets">
+                    <div class="info">
+                        <h3>Chicken Nuggets</h3>
+                        <span>$3.49</span>
+                    </div>
+                    <div class="overview">
+                        Calories: 290 <br>
+                        Total Fat: 18g <br>
+                        Sodium: 540mg <br>
+                        Carbohydrate: 18g <br>
+                        Protein: 15g
+                    </div>
+                </div>
+                <div class="subcontainer">
+                    <button type="button" onclick="addToCart('soda004')">Add to cart</button>
+                    <img src="dr-pepper.jpeg" alt="dr-pepper">
+                    <div class="info">
+                        <h3>Soda</h3>
+                        <span>$0.99</span>
+                    </div>
+                    <div class="overview">
+                        Calories: 150 <br>
+                        Total Fat: 0g <br>
+                        Sodium: 50mg <br>
+                        Carbohydrate: 40g <br>
+                        Protein: 0g
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+  
+<script src="home.js"></script>
+  
+</body>
+
+<footer class="footer-content">
+    <p>© 2024 FastFeast - All rights reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
+    <p>Contact US - 555-342-9087</p>
+</footer>
+</html>
